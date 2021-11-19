@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SiLaDe</title>
-        <!--Bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-        <!--jQuery library--> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!--Latest compiled and minified JavaScript--> 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!--index.css-->
-        <link rel="stylesheet" href="/static/index.css">
-        <!--Web-Easy-->
-        <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--index.css-->
+    <link rel="stylesheet" href="/static/index.css">
+    <!--Web-Easy-->
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
 </head>
 
 <body>
@@ -26,23 +27,24 @@
             <div class="main">
                 <video id="webCam" autoplay playsinline width="300px" height="300px"></video>
                 <div class="buttons">
-                    <div class="snap form-group"> 
-                        <button id="takePhoto" class="btn btn-success" download onclick="takeAPicture()" >Take Photo</button>
+                    <div class="snap form-group">
+                        <button id="takePhoto" class="btn btn-success" download onclick="takeAPicture()">Take
+                            Photo</button>
                     </div>
-                    <div class="clear form-group"> 
-                        <button id="clearcanvas" class="btn btn-primary" download onclick="clearCanvas()" >Clear</button>
+                    <div class="clear form-group">
+                        <button id="clearcanvas" class="btn btn-primary" download onclick="clearCanvas()">Clear</button>
                     </div>
                 </div>
-                <canvas id="canvas" ></canvas>
-                <input type="file" id="realButton" hidden="hidden" />
-                <button type="button" id="customButton" class="btn btn-danger">Choose a File</button>
+                <canvas id="canvas"></canvas>
+                <div id="output"></div>
             </div>
         </div>
     </div>
 
-    <script src="index.js">
+    <script src="/static/index.js">
         
     </script>
 
 </body>
+
 </html>
