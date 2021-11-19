@@ -20,11 +20,3 @@ const webcamElement = document.getElementById("webCam");
             var context = canvasPicture.getContext('2d');
             context.clearRect(0, 0, 300, 300);
         }
-
-
-        const realBtn = document.getElementById('realButton');
-        const customBtn = document.getElementById('customButton');
-
-        customBtn.addEventListener('click', function () {
-            realBtn.click();
-        });
