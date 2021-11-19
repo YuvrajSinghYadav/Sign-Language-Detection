@@ -32,18 +32,17 @@ body{
 }
 
 .main{
-    margin-top: 30px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 20px;
-    column-gap: 100px;
+    row-gap: 40px;
+    column-gap: 80px;
 }
 
 #webCam{
     height: 300px;
     width: 300px;
     background-color: #ffffff;
-    border: grey solid 15px;
     grid-column-start: 1;
     grid-column-end: 2;
     
@@ -56,11 +55,10 @@ body{
     align-items: center;
 }
 
-canvas{
+#canvas{
     width: 300px;
     height: 300px;
     background-color: #ffffff;
-    border: grey solid 15px;
     grid-column-start: 3;
     grid-column-end: 4;
 }
@@ -75,14 +73,13 @@ canvas{
     justify-self: center;
 }
 
-#realButton{
-    display: none;
-}
-
-#customButton{
-    width: 150px;
+#output{
     grid-column-start: 2;
     grid-column-end: 3;
-    justify-self: center;
-    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    height: 40px;
+    width: 300px;
+    justify-content: center;
+    border: 2px solid #000000;
+    padding: 10px;
 }
